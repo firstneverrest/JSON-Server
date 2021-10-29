@@ -11,10 +11,19 @@ npm install -g json-server
 ## Start Json Server
 
 ```
-json-server --watch db.json
+json-server --watch db.json --port 5000
 ```
 
-After starting json server, you would see Resources and Home link.
+After starting json server, you would see Resources and Home link. JSON Server open on port 3000 by default.
+If you would like to change port it has two ways:
+
+1. Include `--port <port_number>` flag at the end of the command
+2. Create `json-server.json` configuration file
+   ```js
+   {
+     "port": 5000
+   }
+   ```
 
 ## GET Request
 
